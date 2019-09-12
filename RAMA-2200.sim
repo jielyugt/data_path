@@ -1,0 +1,12 @@
+{
+  "version": "1.8.2",
+  "globalBitSize": 32,
+  "clockSpeed": 1024,
+  "circuits": [
+    {
+      "name": "Datapath",
+      "components": [],
+      "wires": []
+    }
+  ]
+}

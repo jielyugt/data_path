@@ -1,5 +1,19 @@
 [Main]
-: 0000000
+fetch1: 0006201
+fetch2: 0001082
+fetch3: 0e00900
+add1: 0084044
+add2: 0108045
+add3: 0820100
+jalr1: 00a0207
+jalr2: 0800840
+lw1: 0084049
+lw2: 000840a
+lw3: 000210b
+lw4: 0820080
+addi1: 008404d
+addi2: 000840e
+addi3: 0820100
 [Sequencer]
 : 00
 [Condition]

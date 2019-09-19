@@ -414,6 +414,16 @@
         },
         {
           "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 100,
+          "y": 37,
+          "properties": {
+            "Label": "WrMEM",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
           "x": 55,
           "y": 35,
           "properties": {
@@ -1485,6 +1495,17 @@
         {
           "name": "com.ra4king.circuitsim.gui.peers.gates.ControlledBufferPeer",
           "x": 106,
+          "y": 37,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "SOUTH",
+            "Bitsize": "32"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.gates.ControlledBufferPeer",
+          "x": 106,
           "y": 74,
           "properties": {
             "Label location": "NORTH",
@@ -2355,7 +2376,7 @@
         {
           "x": 82,
           "y": 23,
-          "length": 29,
+          "length": 25,
           "isHorizontal": true
         },
         {
@@ -2639,6 +2660,24 @@
           "y": 75,
           "length": 2,
           "isHorizontal": true
+        },
+        {
+          "x": 107,
+          "y": 23,
+          "length": 4,
+          "isHorizontal": true
+        },
+        {
+          "x": 107,
+          "y": 23,
+          "length": 14,
+          "isHorizontal": false
+        },
+        {
+          "x": 107,
+          "y": 39,
+          "length": 9,
+          "isHorizontal": false
         },
         {
           "x": 107,

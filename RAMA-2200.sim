@@ -1,7 +1,7 @@
 {
   "version": "1.8.2",
   "globalBitSize": 32,
-  "clockSpeed": 8,
+  "clockSpeed": 128,
   "circuits": [
     {
       "name": "Datapath",
@@ -1225,7 +1225,7 @@
             "Label location": "NORTH",
             "Output Bitsize": "32",
             "Label": "",
-            "Extension Type": "ZERO"
+            "Extension Type": "SIGN"
           }
         },
         {

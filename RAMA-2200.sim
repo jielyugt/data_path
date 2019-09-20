@@ -6022,6 +6022,18 @@
           }
         },
         {
+          "name": "com.ra4king.circuitsim.gui.peers.memory.ROMPeer",
+          "x": 37,
+          "y": 36,
+          "properties": {
+            "Label location": "NORTH",
+            "Contents": "0006201 0001082 0e00900 0084044 0108045 0020100 0020207 0080840 0084049 000840a 000210b 0020080 008404d 000840e 0020100 0084050 0008411 0002112 0040040 0084054 0108055 0420100 0084057 0108058 0210122 000421a 0600900 000421c 000841d 0000900 000001e 0004220 0008421 0020100 1000000 29-0000000",
+            "Label": "",
+            "Bitsize": "25",
+            "Address bits": "6"
+          }
+        },
+        {
           "name": "com.ra4king.circuitsim.gui.peers.memory.RegisterPeer",
           "x": 31,
           "y": 43,
@@ -6145,18 +6157,6 @@
             "Label": "",
             "Bitsize": "6",
             "Address bits": "1"
-          }
-        },
-        {
-          "name": "com.ra4king.circuitsim.gui.peers.memory.ROMPeer",
-          "x": 37,
-          "y": 36,
-          "properties": {
-            "Label location": "NORTH",
-            "Contents": "0006201 0001082 0e00900 0084044 0108045 0020100 0020207 0080840 0084049 000840a 000210b 0020080 008404d 000840e 0020100 0084050 0008411 0002112 0040040 0084054 0108055 0420100 0084057 0108058 1210100 000421a 0600900 000421c 000841d 0000900 000001e 0004220 0008421 0020100 30-0000000",
-            "Label": "",
-            "Bitsize": "25",
-            "Address bits": "6"
           }
         },
         {
@@ -6312,12 +6312,6 @@
           "x": 25,
           "y": 53,
           "length": 19,
-          "isHorizontal": true
-        },
-        {
-          "x": 26,
-          "y": 40,
-          "length": 2,
           "isHorizontal": true
         },
         {

@@ -23,7 +23,7 @@ nand2: 0108055
 nand3: 0420100
 skp1: 0084057
 skp2: 0108058
-skp3: 1210100
+skp3: 0210122
 skp4: 000421a
 skp5: 0600900
 goto1: 000421c
@@ -33,6 +33,7 @@ halt1: 000001e
 lea1: 0004220
 lea2: 0008421
 lea3: 0020100
+skp_dummy: 1000000
 [Sequencer]
 add: 03
 nand: 13
@@ -45,5 +46,5 @@ halt: 1e
 skp: 16
 lea: 1f
 [Condition]
-true: 00
-false: 19
+false: 00
+true: 19

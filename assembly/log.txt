@@ -1,0 +1,7 @@
+add + addi: 	plus.s 		(passed)
+sw + lw: 		mem.s		(passed)
+skp:			skp.s 		(passed)
+nand:			nand.s 		(passed)
+goto:			goto.s 		(passed)
+jalr:			jalr.s 		(passed)
+lea:			lea.s 		(passed)

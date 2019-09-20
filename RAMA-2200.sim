@@ -1,7 +1,7 @@
 {
   "version": "1.8.2",
   "globalBitSize": 32,
-  "clockSpeed": 4,
+  "clockSpeed": 8,
   "circuits": [
     {
       "name": "Datapath",

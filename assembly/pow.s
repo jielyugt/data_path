@@ -1,42 +1,42 @@
 ! This program executes pow as a test program using the LC 2200 calling convention
 ! Check your registers ($v0) and memory to see if it is consistent with this program
 
-main:	lea $sp, initsp                         ! initialize the stack pointer
-        lw $sp, 0($sp)                          ! finish initialization
+main:	lea $sp, initsp                         ! initialize the stack pointer            !0
+        lw $sp, 0($sp)                          ! finish initialization                   !1    
 
-        lea $a0, BASE                           ! load base for pow
-        lw $a0, 0($a0)
-        lea $a1, EXP                            ! load power for pow
-        lw $a1, 0($a1)
+        lea $a0, BASE                           ! load base for power                     !2
+        lw $a0, 0($a0)                                                                    !3
+        lea $a1, EXP                            ! load power for pow                      !4
+        lw $a1, 0($a1)                                                                    !5
         lea $at, POW                            ! load address of pow
         jalr $ra, $at                           ! run pow
         lea $a0, ANS                            ! load base for pow
         sw $v0, 0($a0)
 
-        halt                                    ! stop the program here
+        halt                                    ! stop the program here                   !10
         addi $v0, $zero, -1                     ! load a bad value on failure to halt
 
 BASE:   .fill 2
 EXP:    .fill 8
 ANS:	.fill 0                                 ! should come out to 256 (BASE^EXP)
 
-POW:    addi $sp, $sp, -1                       ! allocate space for old frame pointer
+POW:    addi $sp, $sp, -1                       ! allocate space for old frame pointer     !15
         sw $fp, 0($sp)
 
         addi $fp, $sp, 0                        ! set new frame pinter
         
         skplt $zero, $a1                        ! check if $a1 is zero (if not, skip the goto)
         goto RET1                               ! if the power is 0 return 1
-        skplt $zero, $a0
+        skplt $zero, $a0                                                                   !20
         goto RET0                               ! if the base is 0 return 0 (otherwise, the goto was skipped)
 
-        addi $a1, $a1, -1                       ! decrement the power
+        addi $a1, $a1, -1                       ! decrement the power                   !22
 
-        lea $at, POW                            ! load the address of POW
-        addi $sp, $sp, -2                       ! push 2 slots onto the stack
-        sw $ra, -1($fp)                         ! save RA to stack
-        sw $a0, -2($fp)                         ! save arg 0 to stack
-        jalr $ra, $at                           ! recursively call POW
+        lea $at, POW                            ! load the address of POW               !23
+        addi $sp, $sp, -2                       ! push 2 slots onto the stack           !24       
+        sw $ra, -1($fp)                         ! save RA to stack                      !25
+        sw $a0, -2($fp)                         ! save arg 0 to stack                   !26
+        jalr $ra, $at                           ! recursively call pow                  !27
         add $a1, $v0, $zero                     ! store return value in arg 1
         lw $a0, -2($fp)                         ! load the base into arg 0
         lea $at, MULT                           ! load the address of MULT
